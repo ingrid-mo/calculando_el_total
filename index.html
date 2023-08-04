@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div class="card__header">
+          <img src="./asset/img/celular.png" alt="Celular" />
+          <p>Celular cloudv3_6</p>
+        </div>
+        <div class="card__body">
+          <div class="textfilds">
+            <input
+              type="number"
+              min="0"
+              placeholder="Cantidad"
+              class="card__imput"
+              id="inputcantidad"
+            />
+          </div>
+          <div class="textfilds">
+            <input
+              type="text"
+              placeholder="Color"
+              class="card__imput"
+              id="inputcolor"
+            />
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="card__total">
+            <p>Precio unitario</p>
+            <div class="card__footer__score">
+              <p id="price">500000</p>
+            </div>
+          </div>
+          <div>
+            <button id="button">Presiona aqui</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="score">
+        <div class="score--border">
+          <h2>Total</h2>
+          <div class="score__result">
+            <p>Precio final</p>
+            <strong id="scorePrice"></strong>
+          </div>
+          <div class="score__result">
+            <p>Cantidad</p>
+            <strong id="scoreAmount"></strong>
+          </div>
+
+          <div class="score__result">
+            <p>Color elegido</p>
+            <div>
+              <div id="scorecolor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./asset/js/script.js"></script>
+  </body>
+</html>
